@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
 /*
     Paleta de cores
     verde: #49a09d
@@ -52,4 +54,13 @@ main {
 #formulario {
     display: block;
     padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.8em;
 }
