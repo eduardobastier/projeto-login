@@ -31,9 +31,8 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    width: 260px;
+    width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
@@ -41,6 +40,7 @@ main {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -67,15 +67,38 @@ p {
 
 .campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    padding: 4px;
+    border-radius: 8px;
+    margin-left: 44px;
+    transform: translateY(-42px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
